@@ -1,0 +1,7 @@
+
+public class Hourly {
+	
+	private double hourlyWage;
+	private int hoursPerWeek;
+
+}

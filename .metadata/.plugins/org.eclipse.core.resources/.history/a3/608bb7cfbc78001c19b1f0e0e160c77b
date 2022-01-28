@@ -1,0 +1,19 @@
+
+public class FedEx extends Carrier {
+
+	public FedEx() {
+		super("FedEx");
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calcPrice(Package pack) {
+		return pack.getZone().getRate() * pack.getWeight();
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+	
+}

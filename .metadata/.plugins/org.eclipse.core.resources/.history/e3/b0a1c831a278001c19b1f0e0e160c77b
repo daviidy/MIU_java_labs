@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Package {
+	private String description;
+	private double weight;
+	private String zone;
+	List<Carrier> carriers;
+	
+	public Package(String description, double weight, String zone, List<Carrier> carriers) {
+		this.description = description;
+		this.weight = weight;
+		this.zone = zone;
+		this.carriers = carriers;
+	}
+	
+		
+
+}

@@ -1,0 +1,8 @@
+
+public interface ICarrier {
+	
+	public Package package;
+	
+	double calcPrice();
+
+}

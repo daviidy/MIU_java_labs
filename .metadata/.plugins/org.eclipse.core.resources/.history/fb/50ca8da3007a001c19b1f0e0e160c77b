@@ -1,0 +1,10 @@
+
+public class CheckingAccount {
+	private double monthlyFee;
+
+	public CheckingAccount(double monthlyFee) {
+		super();
+		this.monthlyFee = monthlyFee;
+	}
+	
+}

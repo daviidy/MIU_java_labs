@@ -1,0 +1,11 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		Employee emp1 = new Hourly(1, 25, 40);
+		emp1.calcCompensation(2, 2022);
+		emp1.print();
+	}
+
+}

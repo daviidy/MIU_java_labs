@@ -1,0 +1,10 @@
+
+public abstract class Account {
+	private Employee emp;
+	private double balance;
+	private String acctId;
+	
+	abstract String getAccount();
+	abstract double getBalance();
+	abstract double computeUpdatedBalanceSum();
+}

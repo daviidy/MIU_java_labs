@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class Department {
+	private String name;
+	private List<Person> persons;
+	
+	double getTotalSalary() {
+		double res = 0;
+		for(Person person: persons) {
+			
+			if(person instanceof Faculty) {
+				res += ((Faculty) person).getSalary();
+			}
+			
+			if(person instanceof Staff) {
+				res += ((Staff	) person).getSalary();
+			}
+			res += ((Faculty) person).getSalary();
+			
+		}
+		
+		return res;
+	}
+	
+	void showAllMembers() {
+		String res = "";
+		for(Person person: persons) {
+			
+			res += person.getName() + ", " + person.getPhone() + ", " + person.getClass() + "\n"; 
+			
+		}
+		System.out.println(res);
+	}
+	
+	void unitsPerFaculty() {
+		String res = "";
+		for(Person person: persons) {
+			if (person instanceof Faculty) {
+				int units = 0;
+				for(Course course: ((Faculty) person).getCourses()) {
+					units += course.getUnits();
+				}
+				res += person.getName() + ", " + units + "\n";
+			}
+		}
+	}
+	
+	void printStudentsName(String name) {
+		for(Person p: persons) {
+			if(p instanceof Faculty && p.na)
+		}
+	}
+	
+	List<Student> searchStudents(Faculty fac){
+		
+	}
+}

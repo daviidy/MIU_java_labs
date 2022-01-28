@@ -1,0 +1,67 @@
+import java.time.*;
+import java.util.List;
+
+public abstract class Employee {
+	private int empId;
+	List<Paycheck> paychecks;
+	
+	public Employee(int empId, List<Paycheck> paychecks) {
+		this.empId = empId;
+		this.paychecks = paychecks;
+	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+
+	public List<Paycheck> getPaychecks() {
+		return paychecks;
+	}
+
+	void print(){
+		
+		System.out.printf("Employee with ID\t%d \n", empId);
+		if (this instanceof Hourly) {
+			System.out.printf("Type: Hourly\n");
+		}
+		
+		if (this instanceof Salary) {
+			System.out.printf("Type: Salary\n");
+		}
+		
+		if (this instanceof Commissioned) {
+			System.out.printf("Type: Commissioned\n");
+		}
+		
+		System.out.printf("******************************************************");
+		
+		for(Paycheck pay: paychecks) {
+			pay.print();
+		}
+		
+	}
+	
+	Paycheck calcCompensation(int month, int year) {
+		
+		LocalDate start = LocalDate.of(year, month, 1);
+		YearMonth yearMonth = YearMonth.of(year, month);
+		LocalDate end = yearMonth.atEndOfMonth();
+		
+		DateRange date = new DateRange(start, end);
+		
+		double grossPay = this.calcGrossPay(date);
+		
+		Paycheck pay = new Paycheck(grossPay, 23, 5, 1, 3, 7.5, date, this);
+		
+		addPaycheck(pay);
+		
+		return pay;
+	}
+	
+	abstract double calcGrossPay(DateRange date);
+	
+	void addPaycheck(Paycheck paycheck) {
+		paychecks.add(paycheck);
+	}
+
+}

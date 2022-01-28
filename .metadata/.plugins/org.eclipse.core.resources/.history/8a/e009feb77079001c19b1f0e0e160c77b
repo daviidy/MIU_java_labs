@@ -1,0 +1,7 @@
+
+public class Commissioned extends Employee {
+	private int commission;
+	private double baseSalary;
+	
+	
+}

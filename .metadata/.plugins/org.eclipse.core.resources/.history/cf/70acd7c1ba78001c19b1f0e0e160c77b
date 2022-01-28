@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		ICarrier ups = new UPS();
+		ICarrier usmail = new USMail();
+		ICarrier fedex = new FedEx();
+		
+		Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+	    System.out.println("Enter number of packages you want to send");
+
+	    String number = myObj.nextLine();
+	    
+	    for (int i = 0; i < Integer.parseInt(number); i++) {
+	    	System.out.println("Enter description of the package number " + i+1);
+
+		    String description = myObj.nextLine();
+		    
+		    System.out.println("Enter weight of the package number " + i+1);
+
+		    double weight = Double.parseDouble(myObj.nextLine());
+		    
+		    System.out.println("Enter zone of the package number " + i+1);
+
+		    String  zone = myObj.nextLine();
+		    
+		    Zone zoneObj = new Zone(zone);
+		    
+		    Package pack = new Package(description, weight, zoneObj, new ArrayList());
+		    
+		    pack.addCarrier(ups);
+		    pack.addCarrier(usmail);
+		    pack.addCarrier(fedex);
+		}
+
+	}
+
+}

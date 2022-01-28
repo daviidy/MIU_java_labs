@@ -1,0 +1,41 @@
+
+public class Person {
+	protected String name;
+	protected String phone;
+	private int age;
+	
+	
+	public Person(String name, String phone, int age) {
+		this.name = name;
+		this.phone = phone;
+		this.age = age;
+	}
+
+	double getTotalSalary() {
+		double res = 0;
+			
+		if(this instanceof Faculty) {
+			res += ((Faculty) this).getSalary();
+		}
+		
+		if(this instanceof Staff) {
+			res += ((Staff	) this).getSalary();
+		}
+		res += ((Faculty) this).getSalary();
+					
+		return res;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public int getAge() {
+		return age;
+	}
+	
+}

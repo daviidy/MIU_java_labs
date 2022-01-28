@@ -1,0 +1,21 @@
+
+public class Hourly extends Employee {
+	
+	private double hourlyWage;
+	private int hoursPerWeek;
+	
+	public Hourly(int empId, List<Paycheck> paychecks, double hourlyWage, int hoursPerWeek) {
+		super(empId, paychecks);
+		this.hourlyWage = hourlyWage;
+		this.hoursPerWeek = hoursPerWeek;
+	}
+
+	@Override
+	double calcGrossPay(int month, int year) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}

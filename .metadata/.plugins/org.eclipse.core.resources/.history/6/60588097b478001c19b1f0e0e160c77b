@@ -1,0 +1,17 @@
+
+public class UPS extends Carrier {
+
+	@Override
+	public double calcPrice(Package pack) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+	
+	
+
+}

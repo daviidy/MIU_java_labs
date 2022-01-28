@@ -1,0 +1,25 @@
+
+public class FedEx extends Carrier {
+
+	@Override
+	public double calcPrice(Package pack) {
+		Zone zone = pack.getZone();
+		switch (zone.getName()){
+		case "IA":
+		case "OR":
+		case "CA":
+		case "MT": {
+			
+			yield type;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + pack.getZone());
+		}
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+	
+}

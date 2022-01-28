@@ -1,0 +1,4 @@
+
+public class Faculty extends Person {
+	private double salary;
+}

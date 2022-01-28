@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class ExamData {
+	
+	private String studentName;
+	private double testScore;
+	
+	public ExamData(String  name, double score) {
+		studentName = name;
+		testScore = score;
+	}
+
+	public static void main(String[] args) {
+		List<ExamData> sata = new ArrayList<ExamData>();
+
+	}
+
+}

@@ -1,0 +1,35 @@
+import java.util.List;
+
+public abstract class Employee {
+	private int empId;
+	List<Paycheck> paychecks;
+	
+	public Employee(int empId, List<Paycheck> paychecks) {
+		this.empId = empId;
+		this.paychecks = paychecks;
+	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+
+	public List<Paycheck> getPaychecks() {
+		return paychecks;
+	}
+
+	void print(){
+		
+	}
+	
+	Paycheck calcCompensation(int month, int year) {
+		DateRange date = new DateRange(null, null);
+		double grossPay = this.calcGrossPay(null)
+	}
+	
+	abstract double calcGrossPay(DateRange date);
+	
+	void addPaycheck(Paycheck paycheck) {
+		paychecks.add(paycheck);
+	}
+
+}

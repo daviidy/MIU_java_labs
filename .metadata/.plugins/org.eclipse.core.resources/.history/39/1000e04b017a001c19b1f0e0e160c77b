@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Admin {
+
+	public Admin() {
+	}
+	
+	static double computeUpdatedBalanceSum(List<Employee> employees) {
+		for(Employee emp: employees) {
+			emp.computeUpdatedBalanceSum();
+		}
+	}
+}

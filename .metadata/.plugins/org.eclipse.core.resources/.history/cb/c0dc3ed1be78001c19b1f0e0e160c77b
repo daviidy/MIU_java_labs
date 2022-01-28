@@ -1,0 +1,20 @@
+
+public class UPS extends Carrier {
+
+	public UPS() {
+		super("UPS");
+	}
+
+	@Override
+	public double calcPrice(Package pack) {
+		return 0.45 * pack.getWeight();
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+	
+	
+
+}

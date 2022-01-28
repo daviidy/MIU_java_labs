@@ -1,0 +1,14 @@
+
+public class FedEx extends Carrier {
+
+	@Override
+	public double calcPrice(Package pack) {
+		
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+	
+}

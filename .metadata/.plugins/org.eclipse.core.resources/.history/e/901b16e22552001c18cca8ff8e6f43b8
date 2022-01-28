@@ -1,0 +1,5 @@
+package prog5_1;
+
+public class Singleton {
+
+}

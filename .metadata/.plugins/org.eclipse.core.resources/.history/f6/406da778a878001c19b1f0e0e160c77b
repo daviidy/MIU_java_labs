@@ -1,0 +1,5 @@
+
+abstract class Carrier implements ICarrier {
+	private String name;
+
+}

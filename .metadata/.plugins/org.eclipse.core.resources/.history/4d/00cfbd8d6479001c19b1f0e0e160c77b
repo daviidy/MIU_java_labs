@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class DateRange {
+	private int empId;
+	List<Paycheck> paychecks;
+}

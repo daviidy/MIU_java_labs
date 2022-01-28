@@ -1,0 +1,6 @@
+
+public abstract class Account {
+	private Employee emp;
+	
+	abstract String getAccount();
+}

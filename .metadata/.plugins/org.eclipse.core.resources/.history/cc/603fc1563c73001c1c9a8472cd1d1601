@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Faculty extends Person {
+	private double salary;
+	private List<Course> courses;
+
+	public double getSalary() {
+		return salary;
+	}
+}

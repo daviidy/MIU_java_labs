@@ -1,0 +1,8 @@
+
+public class Package {
+	private String desccription;
+	private double weight;
+	private String zone;
+	List<Carrier> carriers;
+
+}

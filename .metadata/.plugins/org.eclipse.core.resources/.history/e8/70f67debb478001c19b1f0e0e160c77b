@@ -1,0 +1,14 @@
+
+public class USMail extends Carrier {
+
+	@Override
+	public double calcPrice(Package pack) {
+		return 0;
+	}
+
+	@Override
+	public String getName() {
+		return this.getName();
+	}
+
+}

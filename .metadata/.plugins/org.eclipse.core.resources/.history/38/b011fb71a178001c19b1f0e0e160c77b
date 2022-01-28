@@ -1,0 +1,7 @@
+
+abstract class Carrier implements ICarrier {
+
+	@Override
+	public abstract double calcPrice();
+
+}

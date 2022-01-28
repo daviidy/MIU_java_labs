@@ -1,0 +1,15 @@
+
+public class Course {
+	private String number;
+	private String title;
+	private int units;
+	public String getNumber() {
+		return number;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public int getUnits() {
+		return units;
+	}
+}

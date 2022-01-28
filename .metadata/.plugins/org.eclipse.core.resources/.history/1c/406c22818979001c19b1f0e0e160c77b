@@ -1,0 +1,16 @@
+import java.time.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		LocalDate start = LocalDate.of(2022, 2, 1);
+		
+		Employee emp1 = new Hourly(1, 25, 40);
+		Employee emp2 = new Commissioned(2, 2000);
+		Order ord1 = new Order(0, null, 0, null)
+		emp1.calcCompensation(2, 2022);
+		emp1.print();
+	}
+
+}

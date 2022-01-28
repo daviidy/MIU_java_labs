@@ -1,0 +1,10 @@
+
+abstract class Carrier implements ICarrier {
+
+	@Override
+	public double calcPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
