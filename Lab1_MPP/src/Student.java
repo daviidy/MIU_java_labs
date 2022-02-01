@@ -32,4 +32,10 @@ public class Student extends Person {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	double getSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
