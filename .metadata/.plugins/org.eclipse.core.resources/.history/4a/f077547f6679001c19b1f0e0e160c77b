@@ -1,6 +1,0 @@
-import java.util.List;
-
-public abstract class Employee {
-	private int empId;
-	List<Paycheck> paychecks;
-}

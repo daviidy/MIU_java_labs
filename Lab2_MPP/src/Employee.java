@@ -136,7 +136,6 @@ public class Employee implements Cloneable {
 		Employee copy = (Employee)super.clone();
 		copy.setPosition((Position)copy.getPosition().clone());
 		return copy;
-		
 	}
 
 	

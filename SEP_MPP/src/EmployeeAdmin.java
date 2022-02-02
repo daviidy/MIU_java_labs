@@ -24,4 +24,9 @@ public class EmployeeAdmin {
 				.filter(x -> socSecNums.contains(x.getSsn()) && x.getSalary() > 80000)
 				.collect(Collectors.toList());
 	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
 }

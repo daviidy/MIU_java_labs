@@ -10,6 +10,7 @@ public class _Function {
 		cons.accept(10);
 		bicons.accept(2, 3);
 		System.out.println(pred.test("sfdndkjg"));
+		System.out.println(getUrl.get());
 	}
 	
 	static Function<Integer, Integer> func = num -> num + 1;
@@ -23,6 +24,8 @@ public class _Function {
 	static BiConsumer<Integer, Integer> bicons = (input1, input2) -> System.out.println(input1 * input2);
 	
 	static Predicate<String> pred = input -> input.length() == 10;
+	
+	static Supplier<String> getUrl = () -> "url of dave";
 	
 	static int increment(int number) {
 		return number + 1;
